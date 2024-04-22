@@ -1,0 +1,85 @@
+\documentclass[hyperref={colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue}]{beamer}
+
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{Madrid}       % or try default, Darmstadt, Warsaw, ...
+  % \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}    % or try default, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{chemfig}
+\usepackage[version=3]{mhchem}
+
+% On Overleaf, these lines give you sharper preview images.
+% You might want to `comment them out before you export, though.
+% \usepackage{pgfpages}
+% \pgfpagesuselayout{resize to}[%
+%   physical paper width=8in, physical paper height=6in]
+
+% Here's where the presentation starts, with the info for the title slide
+\title[]{HOW ACQUISITIONS AFFECT FIRM BEHAVIOR AND PERFORMANCE: EVIDENCE FROM THE DIALYSIS INDUSTRY \\ 
+PAUL J. ELIASON et. al, 2023}
+\author{Presented by: Han Zhang}
+\institute{UT Austin}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Background}
+\subsection{Introduction}
+\include{intro}
+\include{literature}
+\subsection{The Dialysis Industry}
+\include{medical-background}
+\include{medical-background2}
+\include{medicare}
+\include{market}
+
+\section{Data}
+\include{data}
+\include{desc1}
+\include{desc2}
+\include{desc3}
+\include{desc4}
+
+\section{the Effects of Acquisitions}
+\include{design}
+\include{threats}
+\include{drug-dose}
+\include{drug-dose2}
+\include{facility-input}
+\include{patient-outcome}
+\include{patient-outcome2}
+\include{patient-selection}
+
+\section{the Effect of Competition}
+\include{competition}
+\include{hhi}
+\include{hhi-increase}
+\include{switching}
+
+\section{Differences Across Chains and Independent Facilities}
+\include{profit}
+\include{profit2}
+\include{profit3}
+
+\section{Conclusion}
+\include{conclusion}
+\include{conclusion2}
+
+\end{document}
